@@ -1,13 +1,1 @@
-#include<stdio.h>
-
-main(){
-  for(int n=1;n<=100;n++){
-    if(n%3==0)
-      printf("Fizz");
-    if(n%5==0)
-      printf("Buzz");
-    if(n%5 && n%3)
-      printf("%d", n);
-  }
-}
-
+main(n){for(;n<101;n++)printf("%s%s%0.0d",n%3==0?"Fizz":"",n%5==0?"Buzz":"",n%5&&n%3?n:0);}
